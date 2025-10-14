@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+vim.keymap.set({ "n", "i" }, "<C-k>", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set({ "n", "i" }, "<C-j>", "<cmd>bprevious<CR>", { desc = "Go to previous buffer" })
 vim.keymap.set({ "n", "i" }, "<C-e>", "<C-w>h", { desc = "Focus/defocus explorer" })
 vim.keymap.set("n", "<S-j>", "5j", { desc = "Big down" })
