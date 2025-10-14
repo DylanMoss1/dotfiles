@@ -4,8 +4,30 @@ end
 
 # ========== ESSENTIALS ==========
 
+set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
+
 function fish_prompt
-    printf "\n%s\n> " (prompt_pwd --dir-length 20 --full-length-dirs 20)
+    if test $status -eq 0
+        set arrow_color green
+    else
+        set arrow_color red
+    end
+
+    set_color blue
+
+    printf "\n"
+
+    if set -q VIRTUAL_ENV
+        printf "(%s) " (basename $VIRTUAL_ENV)
+    end
+
+    set_color cyan
+    printf "%s" (prompt_pwd --dir-length 20 --full-length-dirs 20)
+
+    set_color $arrow_color
+    printf "\n❯ "
+
+    set fish_color_command blue
 end
 
 function c
