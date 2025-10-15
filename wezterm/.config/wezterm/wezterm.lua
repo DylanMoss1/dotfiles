@@ -8,6 +8,8 @@ local config = wezterm.config_builder()
 
 -- ========== WEZTERM CONFIG ==========
 
+config.window_close_confirmation = "NeverPrompt"
+
 -- config.default_prog = { "ssh", "<name@host>", "-t", "'fish'" }
 config.default_prog = { "fish" }
 

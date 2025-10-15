@@ -3,6 +3,9 @@ return {
     "neovim/nvim-lspconfig",
 
     opts = {
+      servers = {
+        ocamllsp = {},
+      },
       setup = {
         ["*"] = function(_, _)
           local keys = require("lazyvim.plugins.lsp.keymaps").get()
