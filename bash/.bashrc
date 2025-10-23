@@ -37,5 +37,3 @@ alias b="sudo systemctl restart bluetooth"
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 source "$script_dir/.custom_bashrc"
-
-# exec fish
