@@ -20,3 +20,5 @@ vim.keymap.set("n", "<Leader>d", '"_d')
 
 vim.keymap.set("n", "<C-d>", '"_d')
 vim.keymap.set("n", "<S-d>", '"_<S-d>')
+
+vim.keymap.set("n", "<C-a>", "ggVG")
