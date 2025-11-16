@@ -83,6 +83,7 @@ end
 fish_add_path "~/.local/bin"
 
 fzf_configure_bindings --directory=\cd --git_log=\cg --history=\cr --variables=\cy
+set fzf_fd_opts --hidden --no-ignore --exclude .git
 
 set fish_greeting
 
