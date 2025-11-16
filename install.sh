@@ -39,7 +39,7 @@ if ! command nvim >/dev/null 2>&1; then
   required_version="2.28"
 
   if [ "$(printf '%s\n' "$required_version" "$glibc_version" | sort -V | head -n1)" != "$required_version" ]; then
-    curl -LO https://github.com/neovim/neovim-releases/releases/download/v0.11.5/nvim-linux-x86_64.appimage
+    curl -LO https://github.com/neovim/neovim-releases/releases/download/v0.11.2/nvim-linux-x86_64.appimage
   else
     curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
   fi
