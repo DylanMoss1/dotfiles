@@ -30,6 +30,8 @@ function fish_prompt
     set fish_color_command blue
 end
 
+set -x LS_COLORS "$LS_COLORS:di=34"
+
 function c
     clear
 end
@@ -63,11 +65,7 @@ function fcs
 end
 
 function n
-    if count $argv >/dev/null
-        nvim $argv # /apps/home/mossdyla/nvim.appimage
-    else
-        nvim .
-    end
+    nvim
 end
 
 function swap

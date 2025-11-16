@@ -37,3 +37,7 @@ alias b="sudo systemctl restart bluetooth"
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 source "$script_dir/.custom_bashrc"
+
+if command -v fzf >/dev/null 2>&1; then
+  eval "$(fzf --bash)"
+fi
