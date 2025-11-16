@@ -80,6 +80,8 @@ end
 #     sudo systemctl restart bluetooth
 # end
 
+fish_add_path "~/.local/bin"
+
 fzf_configure_bindings --directory=\cd --git_log=\cg --history=\cr --variables=\cy
 
 set fish_greeting
