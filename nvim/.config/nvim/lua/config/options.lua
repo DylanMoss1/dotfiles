@@ -4,6 +4,13 @@
 
 vim.opt.shell = "fish"
 vim.opt.clipboard = "unnamedplus"
+vim.opt.termguicolors = true
+
+vim.g.vimtex_compiler_latexmk = {
+  continuous = 1,
+}
+
+vim.g.vimtex_syntax_conceal_disable = 1
 
 -- local function paste()
 --   return { vim.split(vim.fn.getreg(""), "\n"), vim.fn.getregtype("") }

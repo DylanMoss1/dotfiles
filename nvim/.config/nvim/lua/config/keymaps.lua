@@ -18,11 +18,9 @@ vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "<C-d>", '"_d')
 vim.keymap.set("n", "<C-D>", '"_D')
 
-vim.keymap.set("n", "<C-a>", "ggVG")
+vim.keymap.set({ "n", "i", "t" }, "<C-z>h", "<C-\\><C-N><C-w>h", { desc = "Window left" })
+vim.keymap.set({ "n", "i", "t" }, "<C-z>j", "<C-\\><C-N><C-w>j", { desc = "Window down" })
+vim.keymap.set({ "n", "i", "t" }, "<C-z>k", "<C-\\><C-N><C-w>k<C-w>l", { desc = "Window up-right" })
+vim.keymap.set({ "n", "i", "t" }, "<C-z>l", "<C-\\><C-N><C-w>l", { desc = "Window right" })
 
-vim.keymap.set({ "n", "i", "t" }, "<C-A-j>", "<C-\\><C-N><C-w>h")
-vim.keymap.set({ "n", "i", "t" }, "<C-A-k>", "<C-\\><C-N><C-w>l")
-vim.keymap.set({ "n", "i", "t" }, "<C-A-h>", "<C-\\><C-N><C-w>k<C-N><C-w>l")
-vim.keymap.set({ "n", "i", "t" }, "<C-A-l>", "<C-\\><C-N><C-w>j")
-
-vim.keymap.set({ "n", "t" }, "<C-d>", "<C-\\><C-N><cmd>close<cr><C-w>l")
+vim.keymap.set({ "n", "t" }, "<C-w>", "<C-\\><C-N><cmd>close<cr><C-w>l")

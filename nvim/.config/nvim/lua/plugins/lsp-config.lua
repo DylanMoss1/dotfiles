@@ -7,7 +7,7 @@ return {
         ["*"] = {
           keys = {
             { "K", false },
-            { "H", "<cmd>lua vim.lsp.buf.hover()<CR>" },
+            { "L", "<cmd>lua vim.lsp.buf.hover()<CR>" },
           },
         },
       },
