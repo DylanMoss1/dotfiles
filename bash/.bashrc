@@ -31,7 +31,6 @@ alias e="exit"
 alias r="source ranger"
 alias rmt="trash"
 alias n="nvim"
-alias b="sudo systemctl restart bluetooth"
 
 # ========== LOAD CUSTOM CONFIG ==========
 
