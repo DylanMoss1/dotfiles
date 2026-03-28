@@ -7,6 +7,12 @@ return {
           files = {
             hidden = true,
             ignored = true,
+            exclude = { ".venv", ".env", "env", "venv", "site-packages" },
+          },
+          explorer = {
+            hidden = true,
+            ignored = true,
+            exclude = { ".venv", ".env", "env", "venv", "site-packages" },
           },
         },
         hidden = true,
